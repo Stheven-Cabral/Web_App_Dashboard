@@ -1,13 +1,15 @@
-html {
-    background-color: #F49342;
-    font-weight: normal;
-    font-family: 'Cabin Condensed';
+body {
+    background-color: lightgray;
+    font-family: "Quicksand";
     color: white;
 }
 
+/* Styles for the header */
 header {
-    background-color: grey;
+    background-color: lightsalmon;
     width: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 header::after { 
@@ -18,39 +20,103 @@ header::after {
 
 header h1 {
     float: left;
+    margin: 10px 0px 5px 5px;
     font-weight: normal;
-    margin: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .right-header {
-    width: 20%;
+    width: 60%;
     float: right;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 .bell {
-    width: 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .bell img {
-    width: %;
-    margin: auto;
+    width: 1rem;
+    height: 1rem;
+    padding: 2px 12px 2px;
+    align-self: center;
+    border-right: 2px solid darksalmon;
 }
 
 .user {
     display: flex;
     flex-direction: row;
+    margin-right: 5px;
 }
 
 .user img {
-    width: 30px;
-    height: 30px;
+    align-self: center;
+    width: 25px;
+    height: 25px;
+    padding: 2px 12px;
+    border-radius: 75%;
+    
 }
 
 .user h3 {
-    margin: 0;
+    align-self: center;
+    font-size: 0.75rem;
+    font-weight: normal;
 }
 
+/* Styles for the navigation bar */
+
+nav {
+    background-color: darksalmon;
+    display: flex;
+    justify-content: center;
+}
+
+nav img {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 7px 5vw 5px;
+    color: white;
+}
+
+/* Styling for the main header */
+
+.main-header {
+    white-space: nowrap;
+}
+
+.headline {
+    float: left;
+    font-size: 1rem;
+}
+
+.main-header-search-bar {
+    position: relative;
+    width: 70%;
+    height: 45px;
+    float: right;
+    border-left: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+.main-header-search-bar input {
+    position: absolute; 
+    /* use flexbox instead */
+    right: 0;
+}
+
+.main-header::after {
+    content: "";
+    display: block; 
+    clear: both;
+}
+
+/* Styles for settings */
+#timezones {
+    width: 100%;
+}

@@ -78,8 +78,6 @@ const mobileOptions = {
     }
     }
         
-
-
 var trafficChart = new Chart(traffic, {
     type: 'line',
     data: trafficData,

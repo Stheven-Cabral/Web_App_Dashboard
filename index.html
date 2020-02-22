@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Dashboard</title>
@@ -27,15 +27,15 @@
 
     <nav>
         <a href="#main-head"><img src="icons/icon-dashboard.svg"></a>
-        <a href=""><img src="icons/icon-visits.svg"></a>
-        <a><img src="icons/icon-members.svg"></a>
-        <a><img src="icons/icon-settings.svg"></a>
+        <a href="#traffic"><img src="icons/icon-visits.svg"></a>
+        <a href="#new-members"><img src="icons/icon-members.svg"></a>
+        <a href="#timezones"><img src="icons/icon-settings.svg"></a>
     </nav>
 
     <main>
         <div class="main-header" id="main-head">
             <h2 class="headline">Dashboard</h2>
-            <div class="main=header-search-bar">
+            <div class="main-header-search-bar">
                 <input type="search" placeholder="Search" />
             </div>
         </div>
@@ -43,8 +43,9 @@
         <div id="alerts" class="alerts">
         </div>
 
-        <section class="traffic">
+        <section class="traffic" id="traffic">
             <div class="traffic-header">
+                <h3>TRAFFIC</h3>
                 <ul class="traffic-nav">
                     <!-- Links will be programmed for exceeds expectations -->
                     <li class="traffic-nav-link">Hourly</li>
@@ -55,12 +56,11 @@
             </div>
             <div class="widget-container-full">
                 <canvas id="traffic-chart" width="400" height="500"></canvas>
-                
             </div>
         </section>
 
         <section class="daily">
-            <h3>Daily Traffic</h3>
+            <h3>DAILY TRAFFIC</h3>
             <div class="widget-container-half_1">
                 <canvas id="daily-chart"></canvas>
             </div>
@@ -99,7 +99,7 @@
             </div>
         </section>
 
-        <section class="new-members">
+        <section class="new-members" id="new-members">
             <h3>NEW MEMBERS</h3>
             <div class="member-container">
                 <div class="picture">
