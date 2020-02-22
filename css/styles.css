@@ -1,7 +1,56 @@
 html {
     background-color: #F49342;
+    font-weight: normal;
+    font-family: 'Cabin Condensed';
+    color: white;
 }
 
 header {
-    background-color: #F49342;
+    background-color: grey;
+    width: 100%;
 }
+
+header::after { 
+    content: "";
+    display: block; 
+    clear: both;
+  }
+
+header h1 {
+    float: left;
+    font-weight: normal;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.right-header {
+    width: 20%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bell {
+    width: 1.5rem;
+}
+
+.bell img {
+    width: %;
+    margin: auto;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+}
+
+.user h3 {
+    margin: 0;
+}
+
