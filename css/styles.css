@@ -95,7 +95,7 @@ main {
 .headline {
     float: left;
     width: 25%;
-    font-size: 0.98rem;
+    font-size: 0.80rem;
     text-align: center;
     
 }
@@ -157,97 +157,12 @@ main {
     padding-right: 10px;
 }
 
-/* CSS Grid layout */
-/* .grid-container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "header"
-        "navigation"
-        "main";
-}
-
-header {
-    grid-area: header;
-}
-
-nav {
-    grid-area: navigation;
-}
-
-main {
-    grid-area: main;
-} */
-/* 
-main {
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, minmax(1fr));
-}
-
-.main-header {
-    grid-column: 1 / 2;
-    grid-row: 1/2;
-}
-
-.alerts {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-.traffic {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-}
-
-.daily {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-}
-
-.mobile {
-    grid-column: 1 / 2;
-    grid-row: 5 / 6;
-}
-
-.social {
-    grid-column: 1 / 2;
-    grid-row: 6 / 7;
-}
-
-.new-members {
-    grid-column: 1 / 2;
-    grid-row: 7 / 8;
-}
-
-.recent-activity {
-    grid-column: 1 / 2;
-    grid-row: 8 / 9;
-}
-
-.message {
-    grid-column: 1 / 2;
-    grid-row: 9 / 10;
-}
-
-.settings {
-    grid-column: 1 / 2;
-    grid-row: 10 / 11;
-} */
-
-
-
 /* Styles for traffic section */
 
-.traffic {
-    width: 98%;
-    margin: auto;
-}
 .traffic-header h3 {
-    font-size: 0.75rem;
+    font-size: 0.70rem;
     float: left;
+    margin-left: 10px;
 }
 
 .traffic-nav {
@@ -273,20 +188,78 @@ main {
     color: white;
 }
 
-.traffic-nav-link:visited {
-    background-color: rgb(200, 140, 255);
-    color: blue;
-}
-
 .traffic-header::after {
     content: "";
     display: block; 
     clear: both;
 }
 
-/* Styling for canvas */
-#traffic-chart {
-    height: 100px;
+.widget-container-full {
+    margin: 0px 5px 10px 5px;
+}
+
+/* Styles for daily and mobile traffic section */
+
+.daily,
+.mobile {
+    border-top: 0.75px solid rgb(216, 216, 216);
+}
+
+.daily h3,
+.mobile h3 {
+    font-size: 0.70rem;
+    margin-left: 10px;
+}
+
+.widget-container-half {
+    margin: 0px 5px 10px 5px;
+}
+
+/* Styles for the Social Status section */
+.social-status-header {
+    font-size: 0.70rem;
+    margin-left: 10px;
+}
+
+.social-status {
+    border: 0.75px solid rgb(216, 216, 216);
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+}
+
+.twitter-svg,
+.facebook-svg,
+.google-svg {
+    background-color: darksalmon;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 32px;
+}
+
+.social-status img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    padding-left: 14px;
+    padding-top: 14px;   
+}
+
+.facebook-svg img {
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.social-text {
+    float: right;
+}
+
+.social-status::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 /* Styles for Settings */
