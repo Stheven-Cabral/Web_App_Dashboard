@@ -86,7 +86,7 @@ nav img {
 }
 
 main {
-    width: 98%;
+    width: 100%;
     margin: auto;
 }
 
@@ -94,7 +94,10 @@ main {
 
 .headline {
     float: left;
-    font-size: 1rem;
+    width: 25%;
+    font-size: 0.95rem;
+    text-align: center;
+    
 }
 
 .main-header-search-bar {
@@ -102,15 +105,25 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 70%;
+    width: 75%;
     height: 45px;
     border-left: 0.75px solid rgb(216, 216, 216);
     border-bottom: 0.75px solid rgb(216, 216, 216);
     border-radius: 1px;
+    background-color: rgb(240, 240, 240);
+    box-sizing: border-box;
 }
 
 .main-header-search-bar input {
     border: 1px solid rgb(216, 216, 216);
+    border-right: none;
+    width: 50%;
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 0.75rem;
 }
 
 ::placeholder {
@@ -132,7 +145,30 @@ main {
     clear: both;
 }
 
-/* Styles for settings */
+#search-button {
+    height: 25px;
+    background-color: white;
+    border: 1px solid rgb(216, 216, 216);
+    border-left: none;
+    cursor: pointer;    
+    box-sizing: border-box;
+}
+
+#search-button img {
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+/* CSS Grid layout */
+.main-area {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Styles for Settings */
+
 #timezones {
-    width: 100%;
+    width: 25px;
 }
