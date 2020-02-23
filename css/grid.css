@@ -1,0 +1,248 @@
+.grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+        grid-template-areas:
+        "header"
+        "navigation"
+        "main";
+}
+
+header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+}
+
+nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: navigation;
+}
+
+main {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: main;
+}
+
+main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    -ms-grid-rows: (minmax(100%))[10];
+    grid-template-rows: repeat(10, minmax(100%));
+}
+/* main > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+main > *:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+main > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+main > *:nth-child(4) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+}
+main > *:nth-child(5) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+}
+main > *:nth-child(6) {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+}
+main > *:nth-child(7) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+}
+main > *:nth-child(8) {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+}
+main > *:nth-child(9) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+}
+main > *:nth-child(10) {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+} */
+
+.main-header {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+}
+
+.alerts {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+}
+
+.traffic {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+}
+
+.daily {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+}
+
+.mobile {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5 / 6;
+}
+
+.social {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6 / 7;
+}
+
+.new-members {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7 / 8;
+}
+
+.recent-activity {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 1;
+    grid-row: 8 / 9;
+}
+
+.message {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 1;
+    grid-row: 9 / 10;
+}
+
+.settings {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 10;
+    -ms-grid-row-span: 1;
+    grid-row: 10 / 11;
+}
+
+
+/* main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    -ms-grid-rows: (minmax(100%))[10];
+    grid-template-rows: repeat(10, minmax(100%));
+    grid-template-areas:
+        "mainHeader"
+        "alerts"
+        "traffic"
+        "daily"
+        "mobile"
+        "social"
+        "new"
+        "recents"
+        "message"
+        "settings";
+}
+
+.main-header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: mainHeader;
+}
+
+.alerts {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: alerts;
+}
+
+.traffic {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: traffic;
+}
+
+.daily {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: daily;
+}
+
+.mobile {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: mobile;
+}
+
+.social {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: social;
+}
+
+.new-members {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: new;
+}
+
+.recent-activity {
+    grid-area: recent;
+}
+
+.message {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    grid-area: message;
+}
+
+.settings {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    grid-area: settings;
+} */

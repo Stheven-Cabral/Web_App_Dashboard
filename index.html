@@ -6,9 +6,10 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/grid.css">
     <title>Dashboard</title>
 </head>
-<body>
+<body class="grid-container">
     <header>
         <h1><strong>My</strong>App<sup>TM</sup></h1>
         <div class="right-header">
@@ -31,8 +32,8 @@
         <a href="#new-members"><img src="icons/icon-members.svg"></a>
         <a href="#timezones"><img src="icons/icon-settings.svg"></a>
     </nav>
-
-    <section role="main" class="main-area">
+    
+    <main>
         <div class="main-header" id="main-head">
             <h2 class="headline">Dashboard</h2>
             <div class="main-header-search-bar">
@@ -42,7 +43,7 @@
                 </div>
             </div>
         </div>
-
+    
         <div id="alerts" class="alerts">
         </div>
 
@@ -157,7 +158,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="recent-activity">
             <h3>RECENT ACTIVITY</h3>
             <div class="member-container">
                 <div class="picture">
@@ -221,7 +222,7 @@
             </form>
         </section>
 
-        <section>
+        <section class="settings">
             <h3>SETTINGS</h3>
             <!-- Toggle code -->
             <!-- Toggle code -->
@@ -274,8 +275,7 @@
                 <button class="button-cancel" id="cancel">CANCEL</button>
             </div>
         </section>
-
-    </section>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="js/app.js"></script>

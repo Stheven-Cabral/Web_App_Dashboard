@@ -95,7 +95,7 @@ main {
 .headline {
     float: left;
     width: 25%;
-    font-size: 0.95rem;
+    font-size: 0.98rem;
     text-align: center;
     
 }
@@ -119,10 +119,7 @@ main {
     border-right: none;
     width: 50%;
     height: 25px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 0px 5px;
     font-size: 0.75rem;
 }
 
@@ -147,6 +144,7 @@ main {
 
 #search-button {
     height: 25px;
+    margin-right: 5px;
     background-color: white;
     border: 1px solid rgb(216, 216, 216);
     border-left: none;
@@ -160,11 +158,135 @@ main {
 }
 
 /* CSS Grid layout */
-.main-area {
+/* .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header"
+        "navigation"
+        "main";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: navigation;
+}
+
+main {
+    grid-area: main;
+} */
+/* 
+main {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, minmax(1fr));
+}
+
+.main-header {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+}
+
+.alerts {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.traffic {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.daily {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.mobile {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+.social {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+}
+
+.new-members {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+}
+
+.recent-activity {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+}
+
+.message {
+    grid-column: 1 / 2;
+    grid-row: 9 / 10;
+}
+
+.settings {
+    grid-column: 1 / 2;
+    grid-row: 10 / 11;
+} */
+
+
+
+/* Styles for traffic section */
+
+.traffic {
+    width: 98%;
+    margin: auto;
+}
+.traffic-header h3 {
+    font-size: 0.75rem;
+    float: left;
+}
+
+.traffic-nav {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.traffic-nav-link {
+    list-style: none;
+    width: auto;
+    height: 20px;
+    padding: 3.5px 10px 0px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 0.65rem;
+}
+
+.traffic-nav-link:hover {
+    background-color: rgb(200, 140, 255);
+    color: white;
+}
+
+.traffic-nav-link:visited {
+    background-color: rgb(200, 140, 255);
+    color: blue;
+}
+
+.traffic-header::after {
+    content: "";
+    display: block; 
+    clear: both;
+}
+
+/* Styling for canvas */
+#traffic-chart {
+    height: 100px;
 }
 
 /* Styles for Settings */

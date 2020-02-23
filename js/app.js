@@ -1,32 +1,33 @@
+Chart.defaults.global.defaultFontColor = 'darkgray';
 var traffic = document.getElementById('traffic-chart');
+traffic.height = 200;
 // Fix variable layout
 let trafficData = {
-    labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
-    "4-10", "11-17", "18-24", "25-31"],
+    labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
     datasets: [{
-    data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    2500],
-    backgroundColor: 'rgba(116, 119, 191, .3)',
-    borderWidth: 1,
+        data: [750, 1250, 1000, 1500, 2000, 1500, 1750, 1250, 1750, 2250, 1750, 2000],
+        backgroundColor: 'rgba(255,160,122, 0.4)',
+        borderWidth: 1,
+        lineTension: 0
     }]
-    };
+};
 
 let trafficOptions = {
     aspectRatio: 2.5,
     animation: {
-    duration: 0
+        duration: 0
     },
     scales: {
-    yAxes: [{
-    ticks: {
-    beginAtZero:true
-    }
-    }]
+        yAxes: [{
+            ticks: {
+                beginAtZero: true
+            }   
+        }]
     },
     legend : {
-    display: false
+        display: false
     }
-    };
+};
         
     
 var daily = document.getElementById('daily-chart');
