@@ -384,9 +384,71 @@ main {
     clear: both;
 }
 
-/* Styles for Settings */
+/* Styles for Message and Settings Section */
+.message,
+.settings {
+    border-top: 0.75px solid rgb(216, 216, 216);
+    margin-top: 30px;
+    padding-top: 15px;
+}
 
-#timezones {
-    width: 25px;
+.message-header {
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+}
+
+.member-search,
+.form-area,
+.timezones {
+    border: 0.75px solid rgb(216, 216, 216);
+    border-radius: 4px;
+    font-size: 0.7rem;
+    padding: 7.5px 0px 7.5px 10px;
+    margin: 2.5px 0px 10px; 
+    background-color: rgb(243, 243, 243);
+}
+
+.form-area {
+    height: 100px;
+    overflow: auto;
+}
+
+.message-button {
+    border: none;
+    border-radius: 4px;
+    background-color: lightsalmon;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    padding: 15px 0px;
+}
+
+.settings {
+    width: 95%;
+    margin: auto;
+}
+
+.settings-header {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.timezones {
+    width: 100%;
+    margin-bottom: 15px;
+    color: rgb(216, 216, 216);
+}
+
+.button-save,
+.button-cancel {
+    width: 150px;
 }
 
