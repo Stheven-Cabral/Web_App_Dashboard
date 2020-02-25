@@ -97,7 +97,8 @@ main {
     width: 25%;
     font-size: 0.80rem;
     text-align: center;
-    
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .main-header-search-bar {
@@ -158,6 +159,9 @@ main {
 }
 
 /* Styles for traffic section */
+.traffic {
+    margin-top: 10px;
+}
 
 .traffic-header h3 {
     font-size: 0.70rem;
@@ -204,6 +208,8 @@ main {
 .daily,
 .mobile {
     border-top: 0.75px solid rgb(216, 216, 216);
+    margin-top: 20px;
+    padding-top: 15px;
 }
 
 .daily h3,
@@ -217,6 +223,12 @@ main {
 }
 
 /* Styles for the Social Status section */
+.social {
+    border-top: 0.75px solid rgb(216, 216, 216);
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
 .social-status-header {
     font-size: 0.70rem;
     margin-left: 10px;
@@ -289,42 +301,81 @@ main {
     clear: both;
 }
 
-/* New Members Section */
-.new-member-header {
+/* New Members and Recent Activity Section */
+.new-members,
+.recent-activity {
+    border-top: 0.75px solid rgb(216, 216, 216);
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+.new-member-header,
+.recent-activity-header {
     font-size: 0.70rem;
     margin-left: 10px;
 }
 
 .member-container {
     width: 95%;
-    border: 1px solid black;
+    border-bottom: 1px solid rgb(216, 216, 216);
     margin: auto;
 }
 
 .picture {
-    
     float: left;
+    margin: 10px 7.5px 10px 2.5px; 
 }
 
 .picture img { 
     border-radius: 50%;
-    /* align-self: center; */
     width: 30px;
     height: 30px;
 }
 
-.member-text {
+.member-text,
+.activity-text {
     display: inline-block;
     width: 50%;
     font-size: 0.7rem;
+    font-weight: bold;
+    margin: 12.5px 0px 12.5px 7.5px;
 }
-.member-text p {
+
+.activity-text {
+    width: 70%;
+    font-weight: normal;
+}
+
+.member-text p,
+.activity-text p {
     margin: 0px;
 }
 
-.date-or-next {
+.activity-time {
+    font-weight: bold;
+}
+
+.member-text a {
+    color: darksalmon;
+}
+
+.date {
     float: right;
+}
+
+.date p {
     font-size: 0.7rem;
+    margin: 17.5px 2.5px 0px 0px;
+}
+
+.next {
+    width: 20px;
+    float: right;
+    margin: 13.5px 2.5px 0px 0px;
+}
+
+.next img {
+    margin-top: 2px;
 }
 
 .member-container::after {
