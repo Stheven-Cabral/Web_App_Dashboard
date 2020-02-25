@@ -169,14 +169,15 @@ main {
     float: right;
     display: flex;
     flex-direction: row;
-    margin: 10px 0px;
+    margin: 8.5px 0px ;
+    padding-left: 30px;
 }
 
 .traffic-nav-link {
     list-style: none;
     width: auto;
     height: 20px;
-    padding: 3.5px 10px 0px;
+    padding: 3.5px 9px 0px;
     box-sizing: border-box;
     border-radius: 16px;
     text-align: center;
@@ -288,14 +289,53 @@ main {
     clear: both;
 }
 
+/* New Members Section */
+.new-member-header {
+    font-size: 0.70rem;
+    margin-left: 10px;
+}
+
+.member-container {
+    width: 95%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.picture {
+    
+    float: left;
+}
+
+.picture img { 
+    border-radius: 50%;
+    /* align-self: center; */
+    width: 30px;
+    height: 30px;
+}
+
+.member-text {
+    display: inline-block;
+    width: 50%;
+    font-size: 0.7rem;
+}
+.member-text p {
+    margin: 0px;
+}
+
+.date-or-next {
+    float: right;
+    font-size: 0.7rem;
+}
+
+.member-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 /* Styles for Settings */
 
 #timezones {
     width: 25px;
 }
 
-/* New Members Section */
-.new-member-header {
-    font-size: 0.70rem;
-    margin-left: 10px;
-}
