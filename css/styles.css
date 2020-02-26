@@ -212,6 +212,7 @@ main {
     border-top: 0.75px solid rgb(216, 216, 216);
     margin-top: 20px;
     padding-top: 15px;
+    padding-bottom: 20px;
 }
 
 .daily h3,
@@ -227,7 +228,6 @@ main {
 /* Styles for the Social Status section */
 .social {
     border-top: 0.75px solid rgb(216, 216, 216);
-    margin-top: 20px;
     padding-top: 15px;
 }
 
@@ -306,8 +306,9 @@ main {
 .new-members,
 .recent-activity {
     border-top: 0.75px solid rgb(216, 216, 216);
-    margin-top: 30px;
+    margin-top: 10px;
     padding-top: 15px;
+    padding-bottom: 20px;
 }
 
 .new-member-header,
@@ -335,11 +336,12 @@ main {
 
 .member-text,
 .activity-text {
+    font-family: "Roboto";
     display: inline-block;
     width: 50%;
     font-size: 0.7rem;
     font-weight: bold;
-    margin: 12.5px 0px 12.5px 7.5px;
+    margin: 12.5px 0px 12.5px 7px;
 }
 
 .activity-text {
@@ -389,7 +391,6 @@ main {
 .message,
 .settings {
     border-top: 0.75px solid rgb(216, 216, 216);
-    margin-top: 15px;
     margin-bottom: 15px;
     padding-top: 15px;
 }
@@ -453,12 +454,12 @@ main {
 .settings-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between
 }
 
 .button-save,
 .button-cancel {
-    width: 145px;
+    width: 46%;
     border: none;
     border-radius: 4px;
     padding: 15px 0px;
@@ -469,6 +470,7 @@ main {
 
 /* MEDIA QUERY SECTION FOR 768px RESOLUTION VIEWS */
 @media (min-width: 768px) {
+
 
     /* Header Adjustments */
     header h1 {
@@ -500,24 +502,62 @@ main {
 
     /* Main Header Adjustments */
     .headline {
-        width: 15%;
+        width: 20%;
+        margin-top: 17.5px;
+        font-size: 0.90rem;
     }
 
     .main-header-search-bar {
-        width: 85%;
+        width: 80%;
+        height: 50px;
+    }
+
+    .main-header-search-bar input {
+        font-size: 0.85rem;
+        height: 30px;
+    }
+
+    #search-button {
+        height: 30px;
+    }
+
+    #search-button img {
+        padding-top: 7.5px;
+    }
+
+
+    /* Traffic Section Adjustments */
+    .traffic-nav {
+        margin-right: 5px;
+    }
+
+    /* Daily Section Adjustments */
+    .daily {
+        border-right: 1px solid rgb(216, 216, 216);
+    }
+
+    .daily,
+    .mobile {
+        padding: 5px 2.5px 10px 0px;
+    }
+    
+    .daily h3,
+    .mobile h3 {
+        margin-bottom: 20px;
     }
 
     /* Social Section Adjustments */
     .social-status {
         width: 200px;
+        margin: 15px 10px;
+    }
+
+    .social-status-header {
+        margin-left: 15px;
     }
 
     .social-section-flex {
-        justify-content: space-between; 
-
-    }
-    .social-status {
-        margin: 15px;
+        justify-content: space-around; 
     }
 
     .social-text {
@@ -525,6 +565,54 @@ main {
         margin: 0px;
         padding-left: 20px;
     }
+
+    /* New Members and Recent Activity Section Adjustment */
+    .new-members {
+        border-right: 1px solid rgb(216, 216, 216);
+    }
     
+    .picture {
+        margin-right: 0px;
+    }
+
+    .activity-text {
+        width: 81%;
+    }
+
+    /* Adjustments to the Message and Settings Section */
+    .message {
+        border-right: 1px solid rgb(216, 216, 216);
+    }
+}
+
+/* Grid styles at 768px Resolution */
+@media (min-width: 1024px) {
+    /* Social Status Section Adjustments */
+    .social-status {
+        width: 250px;
+        height: 100px;
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+    }
+
+    .twitter-svg,
+    .facebook-svg,
+    .google-svg {
+        margin-top: 22.5px;
+    }
+
+
+    .social-text {
+        margin-top: 8px;
+    }
+
+    .social-text h3 {
+        font-size: 0.85rem;
+        font-weight: bold;
+    }
+
+    .social-text p {
+        font-size: 2.25rem;
+    }
 }
 
