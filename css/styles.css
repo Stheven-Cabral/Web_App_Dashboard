@@ -282,8 +282,7 @@ main {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    margin-left: 10px;
+    justify-content: flex-start;
 }
 
 .social-text h3 {
@@ -390,7 +389,8 @@ main {
 .message,
 .settings {
     border-top: 0.75px solid rgb(216, 216, 216);
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding-top: 15px;
 }
 
@@ -453,7 +453,7 @@ main {
 .settings-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .button-save,
@@ -469,18 +469,62 @@ main {
 
 /* MEDIA QUERY SECTION FOR 768px RESOLUTION VIEWS */
 @media (min-width: 768px) {
-    .grid-container {
-        grid-template-columns: 10% 90%;
-        grid-template-areas: 
-            "header header"
-            "navigation main"
+
+    /* Header Adjustments */
+    header h1 {
+        font-size:1.25rem;
+        margin: 12.5px 0px 5px 15px;
     }
 
+    .bell img {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    .user h3 {
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+    
+    /* Navigation Adjustments */
     nav {
         flex-direction: column;
         justify-content: flex-start;
     }
 
+    nav img {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 20px 17px;
+    }
+
+    /* Main Header Adjustments */
+    .headline {
+        width: 15%;
+    }
+
+    .main-header-search-bar {
+        width: 85%;
+    }
+
+    /* Social Section Adjustments */
+    .social-status {
+        width: 200px;
+    }
+
+    .social-section-flex {
+        justify-content: space-between; 
+
+    }
+    .social-status {
+        margin: 15px;
+    }
+
+    .social-text {
+        float: none;
+        margin: 0px;
+        padding-left: 20px;
+    }
     
 }
 
