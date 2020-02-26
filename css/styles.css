@@ -160,6 +160,14 @@ main {
     padding-right: 10px;
 }
 
+/* Styles for the Alert Section */
+.alerts {
+    height: 50px;
+    width: 95%;
+    margin: 5px auto;
+    background-color: salmon;
+}
+
 /* Styles for traffic section */
 .traffic {
     margin-top: 10px;
@@ -395,7 +403,8 @@ main {
     padding-top: 15px;
 }
 
-.message-header {
+.message-header,
+.settings-header {
     font-size: 0.7rem;
     font-weight: bold;
     margin-left: 10px;
@@ -432,12 +441,6 @@ main {
     font-weight: bold;
     color: white;
     padding: 15px 0px;
-}
-
-.settings-header {
-    font-size: 0.7rem;
-    font-weight: bold;
-    margin-left: 10px;
 }
 
 .settings-options {
@@ -585,8 +588,39 @@ main {
     }
 }
 
-/* Grid styles at 768px Resolution */
+/* Grid styles at 1024px Resolution */
 @media (min-width: 1024px) {
+
+    /* Main Header Section Adjustments */
+    .headline {
+        font-size: 1.25rem;
+    }
+
+    /* Traffic Section Adjustments */
+    .traffic-header h3 {
+        font-size: 1rem;
+        margin-left: 15px;
+    }
+
+    .traffic-nav-link {
+        margin-left: 30px;
+        font-size: 0.9rem;
+        height: 30px;
+        padding-top: 5.5px;
+    }
+
+    /* Daily, Mobile, New Members, Activity, Message, and Settings Section Header Font Adjustments */
+    .daily h3,
+    .mobile h3,
+    .social-status-header,
+    .new-member-header,
+    .recent-activity-header,
+    .message-header,
+    .settings-header {
+        font-size: 1rem;
+        margin-left: 20px;
+    }
+
     /* Social Status Section Adjustments */
     .social-status {
         width: 250px;
@@ -613,6 +647,37 @@ main {
 
     .social-text p {
         font-size: 2.25rem;
+    }
+
+    /* New Member and Recent Activity Section Adjustments */
+    .picture img {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    .member-text,
+    .activity-text {
+        font-size: 0.9rem;
+    }
+
+    .date p {
+        font-size: 0.95rem;
+        margin-top: 17.5px;
+    }
+
+    .next {
+        margin-top: 15px;
+    }
+
+    /* Message and Settings Section Adjustments */
+    .member-search,
+    .form-area,
+    .timezones,
+    .message-button,
+    .button-save,
+    .button-cancel {
+        font-size: 0.95rem;
     }
 }
 

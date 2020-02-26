@@ -23,13 +23,13 @@ let trafficOptions = {
     scales: {
         xAxes: [{
             ticks: {
-                fontSize: 8
+                fontSize: 10
             }
         }],
         yAxes: [{
             ticks: {
                 beginAtZero: true,
-                fontSize: 8
+                fontSize: 10
             }   
         }]
     },
