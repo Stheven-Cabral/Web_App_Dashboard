@@ -162,10 +162,23 @@ main {
 
 /* Styles for the Alert Section */
 .alerts {
-    height: 50px;
-    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:auto;
+    width: 93%;
     margin: 5px auto;
-    background-color: salmon;
+    background-color: lightsalmon;
+    border-radius: 4px;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.alerts p {
+    font-size: 0.7rem;
+    font-weight: bold;
+
 }
 
 /* Styles for traffic section */
@@ -207,10 +220,6 @@ main {
     content: "";
     display: block; 
     clear: both;
-}
-
-.widget-container-full {
-    margin: 0px 5px 10px 5px;
 }
 
 /* Styles for daily and mobile traffic section */
