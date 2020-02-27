@@ -1,4 +1,13 @@
-// Traffic Chart
+// Code for closing alerts.
+const alerts = document.getElementById("alerts-container");
+const closeOut = document.getElementById("x-out");
+
+closeOut.addEventListener('click', function() {
+    alerts.style.display = "none";
+});
+
+
+// Code for the Traffic Chart
 Chart.defaults.global.defaultFontColor = 'darkgray';
 var traffic = document.getElementById('traffic-chart');
 
@@ -43,8 +52,9 @@ var trafficChart = new Chart(traffic, {
     data: trafficData,
     options: trafficOptions
 });
-        
-// Daily Traffic Chart
+
+
+// Code for the Daily Traffic Chart
 var daily = document.getElementById('daily-chart');
 const dailyData = {
     labels: ["S", "M", "T", "W", "T", "F", "S"],
@@ -83,7 +93,8 @@ var dailyChart = new Chart(daily, {
 });
 
 
-// Mobile Traffic Chart
+
+//Code for the Mobile Traffic Chart
 var mobile = document.getElementById('mobile-chart');
 const mobileData = {
     labels: ["Desktop", "Tablet", "Phones"],
@@ -114,3 +125,21 @@ var mobileChart = new Chart(mobile, {
     data: mobileData,
     options: mobileOptions
 });
+
+// Code for for Messaging Section.
+const user = document.getElementById('member-search');
+const message = document.getElementById("form-area");
+const send = document.getElementById("message-button");
+
+send.addEventListener('click', function() {
+    if (user.value === "" && message.value === "") {
+        alert("Please fill out user and message fields.");
+        } else if (user.value === "" ) {
+        alert("Please fill out user field.");
+        } else if (message.value === "" ) {
+        alert("Please fill out message field.");
+        } else {
+        alert("Message successfully sent to: " + user.value);
+    }        
+});
+
