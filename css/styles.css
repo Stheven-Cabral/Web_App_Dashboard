@@ -161,12 +161,12 @@ main {
 }
 
 /* Styles for the Alert Section */
-.alerts {
+.alerts-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height:auto;
-    width: 93%;
+    width: 94%;
     margin: 5px auto;
     background-color: lightsalmon;
     border-radius: 4px;
@@ -175,10 +175,21 @@ main {
     padding-right: 5px;
 }
 
-.alerts p {
+.alerts h3 {
     font-size: 0.7rem;
     font-weight: bold;
+    margin: 10px 0px 2.5px 5px;
+}
 
+.alert-details {
+    font-size: 0.7rem;
+    font-weight: normal;
+    padding: 0px 20px 0px 5px;
+    margin-top: 5px;
+}
+
+.x-out {
+    padding-right: 5px;
 }
 
 /* Styles for traffic section */
@@ -535,6 +546,18 @@ main {
 
     #search-button img {
         padding-top: 7.5px;
+    }
+
+    /* Alert Section Adjustments */
+    .alerts {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .alert-details {
+        display: block;
+        padding-top: 5px;
+        padding-left: 20px;
     }
 
 
