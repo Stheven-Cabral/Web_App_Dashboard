@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/toggle-switch.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Dashboard</title>
 </head>
 <body class="grid-container">
@@ -239,33 +239,34 @@
         <section class="settings">
             <h3 class="settings-header">SETTINGS</h3>
             <div class="settings-options">
-                <label class="switch-light switch-candy" onclick="">
-                    <input type="checkbox">
-                  
+
+                <div class="toggle-container">
                     <strong>
-                      Send Email Notifications
+                        Send Email Notifications
                     </strong>
-                  
-                    <span>
-                      <span>Off</span>
-                      <span>On</span>
-                      <a></a>
-                    </span>
-                </label>
-                
-                <label class="switch-light switch-candy" onclick="">
-                    <input type="checkbox">
-                  
+                    <label class="switch-light switch-candy toggles" onclick="">
+                        <input type="checkbox">
+                        <span>
+                        <span>Off</span>
+                        <span>On</span>
+                        <a></a>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="toggle-container">
                     <strong>
-                      Set Profile to Public
+                        Send Email Notifications
                     </strong>
-                  
-                    <span>
-                      <span>Off</span>
-                      <span>On</span>
-                      <a></a>
-                    </span>
-                </label>
+                    <label class="switch-light switch-candy toggles" onclick="">
+                        <input type="checkbox">
+                        <span>
+                        <span>Off</span>
+                        <span>On</span>
+                        <a></a>
+                        </span>
+                    </label>
+                </div>
 
                 <select class="timezones" id="timezones">
                     <option disabled selected>Select a Timezone</option>
