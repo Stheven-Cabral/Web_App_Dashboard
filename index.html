@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Dashboard</title>
@@ -238,8 +239,34 @@
         <section class="settings">
             <h3 class="settings-header">SETTINGS</h3>
             <div class="settings-options">
-                <!-- Toggle code -->
-                <!-- Toggle code -->
+                <label class="switch-light switch-candy" onclick="">
+                    <input type="checkbox">
+                  
+                    <strong>
+                      Send Email Notifications
+                    </strong>
+                  
+                    <span>
+                      <span>Off</span>
+                      <span>On</span>
+                      <a></a>
+                    </span>
+                </label>
+                
+                <label class="switch-light switch-candy" onclick="">
+                    <input type="checkbox">
+                  
+                    <strong>
+                      Set Profile to Public
+                    </strong>
+                  
+                    <span>
+                      <span>Off</span>
+                      <span>On</span>
+                      <a></a>
+                    </span>
+                </label>
+
                 <select class="timezones" id="timezones">
                     <option disabled selected>Select a Timezone</option>
                     <!-- Timezone options GithubGist nodesocket https://gist.github.com/nodesocket/3919205 -->
