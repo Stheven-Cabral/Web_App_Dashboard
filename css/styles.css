@@ -167,7 +167,7 @@ main {
     justify-content: space-between;
     height:auto;
     width: 94%;
-    margin: 5px auto;
+    margin: 10px auto 0px;
     background-color: lightsalmon;
     border-radius: 4px;
     color: white;
@@ -190,6 +190,9 @@ main {
 
 .x-out {
     padding-right: 5px;
+    height: 12.5px;
+    vertical-align: middle;
+    align-self: center;
 }
 
 /* Styles for traffic section */
@@ -452,6 +455,10 @@ main {
     background-color: rgb(243, 243, 243);
 }
 
+.member-search {
+    height: 21px;
+}
+
 .form-area {
     height: 100px;
     overflow: auto;
@@ -649,12 +656,17 @@ main {
         border-right: 1px solid rgb(216, 216, 216);
     }
 
-/* Grid styles at 1024px Resolution */
+/* MEDIA QUERY AT 1024px RESOLUTION */
 @media (min-width: 1024px) {
 
     /* Main Header Section Adjustments */
     .headline {
         font-size: 1.25rem;
+    }
+
+    /* Alerts Section Adjustment */
+    .alerts-container {
+        width: 96%;
     }
 
     /* Traffic Section Adjustments */
@@ -667,7 +679,8 @@ main {
         margin-left: 30px;
         font-size: 0.9rem;
         height: 30px;
-        padding-top: 5.5px;
+        padding-top: 6px;
+        padding-left: 10px;
     }
 
     /* Daily, Mobile, New Members, Activity, Message, and Settings Section Header Font Adjustments */
