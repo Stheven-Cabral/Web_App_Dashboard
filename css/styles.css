@@ -485,6 +485,14 @@ main {
     margin-right: 5px;
 }
 
+#send-email-label {
+    padding-right: 10px;
+}
+
+#profile-private-label {
+    padding-right: 30px;
+}
+
 .toggles span{
     width: 100px;
     font-size: 0.75rem;
@@ -499,7 +507,7 @@ main {
 .settings-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .button-save,
@@ -640,7 +648,6 @@ main {
     .message {
         border-right: 1px solid rgb(216, 216, 216);
     }
-}
 
 /* Grid styles at 1024px Resolution */
 @media (min-width: 1024px) {
@@ -732,6 +739,10 @@ main {
     .button-save,
     .button-cancel {
         font-size: 0.95rem;
+    }
+
+    .settings-buttons {
+        margin-top: 3px;
     }
 }
 
