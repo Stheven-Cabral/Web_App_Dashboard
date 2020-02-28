@@ -38,27 +38,35 @@ header h1 {
 .bell-container {
     display: flex;
     justify-content: center;
+    position: relative;
+    width: 45px;
+    height: 40px;
+    margin-top: 5px;
+    border-right: 2px solid darksalmon;
 }
 
 .icon-bell {
     width: 1rem;
     height: 1rem;
     padding: 10px 10px;
-    margin-bottom: 1px;
-    border-right: 1.5px solid darksalmon;
     border-radius: 3px;
     fill: white;
     align-self: center;
     transition: all .1s;
 }
 
+.marker-container {
+    position: absolute;
+    right: 7.5px;
+}
+
 .notifications {
     display: none;
-    width: 300px;
+    width: 155px;
     min-height: 150px;
     position: absolute;
     top: 50px;
-    right: 171px;
+    right: 25px;
     border: 3px solid white;
     border-radius: 4px;
     background-color: lightsalmon;
@@ -75,13 +83,17 @@ header h1 {
 }
 
 .notification-header {
-    font-size: 0.85rem;
-    padding: 10px 0px 0px 10px;
+    font-size: 0.80rem;
+    margin: 15px 0px 0px 15px;
+}
+
+.notification-list {
+    padding: 0px 5px 0px 15px;
 }
 
 .notification-list li {
     list-style: none;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-style: italic;
     margin: 10px 0px 20px;
 }
@@ -633,6 +645,11 @@ main {
         display: block;
         padding-top: 5px;
         padding-left: 20px;
+    }
+
+    .notifications {
+        width: 300px;
+        right: 171px;
     }
 
 
