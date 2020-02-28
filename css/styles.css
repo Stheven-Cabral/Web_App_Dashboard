@@ -656,6 +656,11 @@ main {
         border-right: 1px solid rgb(216, 216, 216);
     }
 
+    #timezones {
+        margin-top: 12px;
+    }
+}
+
 /* MEDIA QUERY AT 1024px RESOLUTION */
 @media (min-width: 1024px) {
 
@@ -756,6 +761,10 @@ main {
 
     .settings-buttons {
         margin-top: 3px;
+    }
+
+    #timezones {
+        margin-top: 10px;
     }
 }
 
