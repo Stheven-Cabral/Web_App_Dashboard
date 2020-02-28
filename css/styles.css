@@ -35,17 +35,55 @@ header h1 {
     justify-content: flex-end;
 }
 
-.bell {
+.bell-container {
     display: flex;
     justify-content: center;
 }
 
-.bell img {
+.icon-bell {
     width: 1rem;
     height: 1rem;
-    padding: 5px 12px 2px;
+    padding: 10px 10px;
+    margin-bottom: 1px;
+    border-right: 1.5px solid darksalmon;
+    border-radius: 3px;
+    fill: white;
     align-self: center;
-    border-right: 2px solid darksalmon;
+    transition: all .1s;
+}
+
+.notifications {
+    display: none;
+    width: 300px;
+    min-height: 150px;
+    position: absolute;
+    top: 50px;
+    right: 171px;
+    border: 3px solid white;
+    border-radius: 4px;
+    background-color: lightsalmon;
+    color: white;
+}
+
+.icon-bell:hover {
+    background-color: white;
+    fill: darksalmon;
+}
+
+.icon-bell:hover + .notifications {
+    display: block;
+}
+
+.notification-header {
+    font-size: 0.85rem;
+    padding: 10px 0px 0px 10px;
+}
+
+.notification-list li {
+    list-style: none;
+    font-size: 0.8rem;
+    font-style: italic;
+    margin: 10px 0px 20px;
 }
 
 .user {
@@ -538,7 +576,7 @@ main {
         margin: 12.5px 0px 5px 15px;
     }
 
-    .bell img {
+    .icon-bell {
         width: 1.25rem;
         height: 1.25rem;
     }
