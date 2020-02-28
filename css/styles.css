@@ -62,11 +62,11 @@ header h1 {
 
 .notifications {
     display: none;
-    width: 155px;
-    min-height: 150px;
     position: absolute;
-    top: 50px;
-    right: 25px;
+    top: 45px;
+    right: 5px;
+    width: 150px;
+    min-height: 150px;
     border: 3px solid white;
     border-radius: 4px;
     background-color: lightsalmon;
@@ -76,10 +76,6 @@ header h1 {
 .icon-bell:hover {
     background-color: white;
     fill: darksalmon;
-}
-
-.icon-bell:hover + .notifications {
-    display: block;
 }
 
 .notification-header {
@@ -558,7 +554,7 @@ main {
 .timezones {
     width: 100%;
     margin-bottom: 15px;
-    color: rgb(216, 216, 216);
+    color: rgb(160, 160, 160);
 }
 
 .settings-buttons {
@@ -648,8 +644,8 @@ main {
     }
 
     .notifications {
-        width: 300px;
-        right: 171px;
+        width: 250px;
+        right: 0px;
     }
 
 

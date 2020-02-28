@@ -6,6 +6,14 @@ closeOut.addEventListener('click', function() {
     alerts.style.display = "none";
 });
 
+// Code for displaying notifications when hovering over bell icon.
+const bellContainer = document.querySelector(".bell-container");
+const notifications = document.querySelector(".notifications");
+
+bellContainer.addEventListener('mouseover', function() {
+    notifications.style.display = "block";
+});
+
 
 // Code for the Traffic Chart
 Chart.defaults.global.defaultFontColor = 'darkgray';
