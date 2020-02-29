@@ -14,6 +14,10 @@ bellContainer.addEventListener('mouseover', function() {
     notifications.style.display = "block";
 });
 
+bellContainer.addEventListener('mouseout', function () {
+    notifications.style.display = "none";
+});
+
 
 // Code for the Traffic Chart
 Chart.defaults.global.defaultFontColor = 'darkgray';
