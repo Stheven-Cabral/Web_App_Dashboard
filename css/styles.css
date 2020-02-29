@@ -342,7 +342,7 @@ main {
     border-radius: 32px;
 }
 
-.social-status img {
+.social-img {
     width: 25px;
     height: 25px;
     vertical-align: middle;
@@ -350,9 +350,19 @@ main {
     padding-top: 14px;   
 }
 
-.facebook-svg img {
-    padding-left: 12px;
-    padding-top: 12px;
+.facebook-svg {
+    display: flex;
+    align-items: center;
+}
+
+.facebook-svg svg {
+    width: 30px;
+    padding-left: 10px;
+    margin-top: 0px;
+}
+
+.social-img-path {
+    fill: white;
 }
 
 .social-text {
