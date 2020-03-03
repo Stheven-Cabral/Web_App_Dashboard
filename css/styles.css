@@ -51,9 +51,12 @@ header h1 {
     height: 1rem;
     padding: 10px 10px;
     border-radius: 3px;
-    fill: white;
     align-self: center;
-    transition: all .1s;
+    transition: all .5s;
+}
+
+.hover-container path {
+    fill: white;
 }
 
 .marker-container {
@@ -75,8 +78,7 @@ header h1 {
 }
 
 .icon-bell:hover {
-    background-color: white;
-    fill: darksalmon;
+    transform: rotate(25deg);
 }
 
 .notification-header {
